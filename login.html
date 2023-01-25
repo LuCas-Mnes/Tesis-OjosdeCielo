@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="assets/css/stylelog.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/master.css">
 </head>
+
 <body>
-    <hgroup>
-        <h1>Material Design Form</h1>
-        <h3>By Josh Adamous</h3>
-      </hgroup>
-      <form>
-        <div class="group">
-          <input type="text"><span class="highlight"></span><span class="bar"></span>
-          <label>Name</label>
-        </div>
-        <div class="group">
-          <input type="email"><span class="highlight"></span><span class="bar"></span>
-          <label>Email</label>
-        </div>
-        <button type="button" class="button buttonBlue">Subscribe
-          <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-        </button>
-      </form>
-      <footer><a href="http://www.polymer-project.org/" target="_blank"><img src="https://www.polymer-project.org/images/logos/p-logo.svg"></a>
-        <p>You Gotta Love <a href="http://www.polymer-project.org/" target="_blank">Google</a></p>
-      </footer>
-      <script src="assets/js/mainlog.js"></script>
+    <div class="body"></div>
+    <div class="grad"></div>
+    <div class="header">
+        <div>Ojos de Cielo<span></span></div>
+    </div>
+    <div class="login">
+        <form action="login.php" method="post">
+            <!--uso metodo post para q este encriptado, si uso el get cualquier hacker puede ver la informacion--> 
+            <label for=" Ingrese Usuario"></label>
+            <input type="text" placeholder="Usuario" name="user" value="Usuario"><br>
+            <!-- type es el tipo de info, en este caso texto, name es el identificador, y value ponemos lo q queremos q diga dentro de ese input-->
+            <input type="password" placeholder="Contraseña" name="pass" value="Contrasenia"><br>
+            <!-- tipo password es para que cuando ingrese datos no se vean en la pantalla, ejemplo el key loger no lo puede leer
+            por ende no puede robar los datos del usuario-->
+
+            <button>
+                <input type="submit" name="ingresar" value="Enviar">
+            </button>
+            
+            <!-- Armamos el boton para enviar los datos ingresados -->
+        </form>
+
+    </div>
+    <br>
 </body>
+
 </html>
